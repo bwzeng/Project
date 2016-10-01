@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("../css/font-awesome.min.css");
+/* line 10, ../sass/main.scss */
+#footer .copyright {
+  text-align: left;
+}

@@ -167,8 +167,8 @@
 				// Nav + Jumplinks.
 					$nav_links.add($jumplinks).click(function(e) {
 						var t = $(this), href = t.attr('href'), id;
-
-						if (href.substring(0,1) == '#') {
+						
+						if (href.substring(0,1) == '#' && !($(this).is('.fa-folder'))) {
 
 							e.preventDefault();
 							e.stopPropagation();
@@ -177,7 +177,6 @@
 
 							if (id in panels)
 								panels[id]._activate();
-
 						}
 
 					});
