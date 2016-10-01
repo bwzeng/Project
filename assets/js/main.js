@@ -1,9 +1,3 @@
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var settings = {
@@ -112,10 +106,10 @@
 								$nav_links.filter('[href="#' + id + '"]').addClass('active');
 
 							// Change hash.
-								if (i == 0)
-									window.location.hash = '#';
-								else
-									window.location.hash = '#' + id;
+								// if (i == 0)
+								// 	window.location.hash = '#';
+								// else
+								// 	window.location.hash = '#' + id;
 
 							// Add bottom padding.
 								var x = parseInt($wrapper.css('padding-top')) +
@@ -168,15 +162,18 @@
 					$nav_links.add($jumplinks).click(function(e) {
 						var t = $(this), href = t.attr('href'), id;
 						
-						if (href.substring(0,1) == '#' && !($(this).is('.fa-folder'))) {
+						if (href.substring(0,1) == '#') {
 
 							e.preventDefault();
-							e.stopPropagation();
 
-							id = href.substring(1);
+							if(!($(this).is('.fa-list-ul'))){
+								e.stopPropagation();
 
-							if (id in panels)
-								panels[id]._activate();
+								id = href.substring(1);
+
+								if (id in panels)
+									panels[id]._activate();
+							}
 						}
 
 					});

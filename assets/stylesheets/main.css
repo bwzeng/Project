@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("../css/font-awesome.min.css");
-/* line 10, ../sass/main.scss */
+/* line 9, ../sass/main.scss */
+#me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 15, ../sass/main.scss */
+#me table td, #me table th {
+  padding: 8px;
+}
+/* line 19, ../sass/main.scss */
+#me table tr:nth-child(even) {
+  background-color: rgba(221, 221, 221, 0.5);
+}
+
+/* line 26, ../sass/main.scss */
 #footer .copyright {
   text-align: left;
 }
