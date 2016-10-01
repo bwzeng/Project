@@ -106,10 +106,10 @@
 								$nav_links.filter('[href="#' + id + '"]').addClass('active');
 
 							// Change hash.
-								if (i == 0)
-									window.location.hash = '#';
-								else
-									window.location.hash = '#' + id;
+								// if (i == 0)
+								// 	window.location.hash = '#';
+								// else
+								// 	window.location.hash = '#' + id;
 
 							// Add bottom padding.
 								var x = parseInt($wrapper.css('padding-top')) +
