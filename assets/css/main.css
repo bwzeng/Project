@@ -804,7 +804,7 @@
 		clear: both;
 	}
 
-	p, ul, ol, dl, table, blockquote, form {
+	p, ul, ol, dl, blockquote, form {
 		margin-bottom: 2em;
 	}
 
@@ -815,7 +815,7 @@
 	}
 
 		table.default tbody tr {
-			border-bottom: solid 1px #f4f4f4;
+			border: solid 1px #f4f4f4;
 		}
 
 		table.default td {
@@ -829,7 +829,7 @@
 		}
 
 		table.default thead {
-			border-bottom: solid 2px #f4f4f4;
+			border: solid 2px #f4f4f4;
 		}
 
 /* Form */
@@ -1324,27 +1324,16 @@
 
 			#me {
 				padding: 0;
-				height: 20em;
 			}
 
 				#me .pic {
 					display: block;
-					position: absolute;
-					right: -1px;
-					top: 0;
 					height: 100%;
 					text-decoration: none;
 				}
 
-					#me .pic img {
-						position: relative;
-						display: block;
-						height: 100%;
-					}
-
 					#me .pic .arrow {
 						display: block;
-						position: absolute;
 						right: 0;
 						top: 50%;
 						margin-top: -1.375em;
@@ -1377,31 +1366,6 @@
 					#me .pic:hover .arrow {
 						width: 3em;
 						padding-right: 0.25em;
-					}
-
-				#me header {
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					margin-left: 2.5em;
-				}
-
-					#me header > h1 {
-						position: absolute;
-						left: 0;
-						bottom: 52.5%;
-						margin: 0;
-					}
-
-					#me header > p {
-						position: absolute;
-						left: 0;
-						top: 52.5%;
-						font-size: 1.5em;
-						letter-spacing: -0.015em;
-						margin-top: 0;
 					}
 
 		/* Footer */
@@ -1529,26 +1493,8 @@
 				width: 100%;
 			}
 
-				#me .pic img {
-					display: block;
-					width: 100%;
-				}
-
 				#me .pic .arrow {
 					display: none;
-				}
-
-			#me header {
-				text-align: center;
-			}
-
-				#me header > h1 {
-					font-size: 2.15em;
-					letter-spacing: -0.025em;
-				}
-
-				#me header > p {
-					font-size: 1.25em;
 				}
 
 		/* Footer */
