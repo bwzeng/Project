@@ -10,12 +10,12 @@
 #me table td, #me table th {
   padding: 8px;
 }
-/* line 20, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 #me table tr:nth-child(even) {
   background-color: rgba(221, 221, 221, 0.5);
 }
 
-/* line 27, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 #footer .copyright {
   text-align: left;
 }

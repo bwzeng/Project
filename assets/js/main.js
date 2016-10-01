@@ -162,15 +162,18 @@
 					$nav_links.add($jumplinks).click(function(e) {
 						var t = $(this), href = t.attr('href'), id;
 						
-						if (href.substring(0,1) == '#' && !($(this).is('.fa-list-ul'))) {
+						if (href.substring(0,1) == '#') {
 
 							e.preventDefault();
-							e.stopPropagation();
 
-							id = href.substring(1);
+							if(!($(this).is('.fa-list-ul'))){
+								e.stopPropagation();
 
-							if (id in panels)
-								panels[id]._activate();
+								id = href.substring(1);
+
+								if (id in panels)
+									panels[id]._activate();
+							}
 						}
 
 					});
