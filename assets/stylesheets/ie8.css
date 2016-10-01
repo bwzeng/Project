@@ -1,10 +1,5 @@
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 /* Basic */
-/* line 14, ../sass/ie8.scss */
+/* line 8, ../sass/ie8.scss */
 body {
   background-image: url("images/bg.jpg");
   background-size: cover;
@@ -12,17 +7,17 @@ body {
 }
 
 /* Section/Article */
-/* line 23, ../sass/ie8.scss */
+/* line 17, ../sass/ie8.scss */
 section > .last-child, section.last-child, article > .last-child, article.last-child {
   margin-bottom: 0;
 }
 
 /* Nav */
-/* line 33, ../sass/ie8.scss */
+/* line 27, ../sass/ie8.scss */
 #nav a span {
   display: none !important;
 }
-/* line 37, ../sass/ie8.scss */
+/* line 31, ../sass/ie8.scss */
 #nav a:before {
   font-size: 1.75em;
 }
